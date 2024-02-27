@@ -1,0 +1,54 @@
+tractor
+-robot
+-piso 1
+juguetes distantes
+pizzas
+peperoni
+aceitunas
+tomates
+reloj de arena
+pino de bowling
+-cambio de ruta
+payaso inflable
+trompo
+-caballito de madera
+casita de blqoues
+tren
+-pelota
+auto de carreras
+avion
+-tunel
+-arco
+giorgio
+dino
+-dado
+metegol
+-triciclo
+-bloque lego
+-piso 2
+-cohete
+
+cabezon
+base
+nube
+
+maquina de pizzas
+buzon
+pared
+tacho
+lampara de calle
+edifcio 1
+garage
+carteles
+edificio 2
+edificio 3
+tacho
+rampa
+flecha
+cartel
+calle
+
+perder vida
+ganar
+
+
