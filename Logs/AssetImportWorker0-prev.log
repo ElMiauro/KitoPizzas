@@ -1,0 +1,387 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.42f1 (7ade1201f527) revision 8052242'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22621) 64bit Core' Language: 'en' Physical Memory: 32600 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\2020.3.42f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+E:/GameDev/KitoPizzas
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+49254
+Successfully changed project path to: E:/GameDev/KitoPizzas
+E:/GameDev/KitoPizzas
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 39.52 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.42f1 (7ade1201f527)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/2020.3.42f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path E:/GameDev/KitoPizzas/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3070 (ID=0x2484)
+    Vendor:   
+    VRAM:     8032 MB
+    Driver:   31.0.15.3699
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/2020.3.42f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/2020.3.42f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/2020.3.42f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56292
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/2020.3.42f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001198 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 41.36 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.432 seconds
+Domain Reload Profiling:
+	ReloadAssembly (432ms)
+		BeginReloadAssembly (45ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (337ms)
+			LoadAssemblies (44ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (105ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (21ms)
+			SetupLoadedEditorAssemblies (134ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (41ms)
+				BeforeProcessingInitializeOnLoad (12ms)
+				ProcessInitializeOnLoadAttributes (57ms)
+				ProcessInitializeOnLoadMethodAttributes (20ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.001618 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 42.53 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.847 seconds
+Domain Reload Profiling:
+	ReloadAssembly (848ms)
+		BeginReloadAssembly (101ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (14ms)
+		EndReloadAssembly (704ms)
+			LoadAssemblies (68ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (224ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (291ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (2ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (43ms)
+				BeforeProcessingInitializeOnLoad (70ms)
+				ProcessInitializeOnLoadAttributes (157ms)
+				ProcessInitializeOnLoadMethodAttributes (14ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (1ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.73 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2982 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 134.6 MB.
+System memory in use after: 134.8 MB.
+
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 3420.
+Total: 2.756500 ms (FindLiveObjects: 0.169800 ms CreateObjectMapping: 0.103700 ms MarkObjects: 2.411500 ms  DeleteObjects: 0.070400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Global/Personajes/Kito/Kito01.max
+  artifactKey: Guid(730c76b0627102546953f7929db532aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Global/Personajes/Kito/Kito01.max using Guid(730c76b0627102546953f7929db532aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e77832c37ad01d07cc500a16eaa32220') in 0.435944 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000200 seconds.
+  path: Assets/Global/Personajes/Kito/Kito17.max
+  artifactKey: Guid(5ffa884b82b9cbe44a118f15f205f89f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Global/Personajes/Kito/Kito17.max using Guid(5ffa884b82b9cbe44a118f15f205f89f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90a3cba3916f10ab8e7518d513345694') in 0.056537 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000273 seconds.
+  path: Assets/Global/Personajes/Kito/Kito06.max
+  artifactKey: Guid(fd9bb9b0859b6b14e83b4d9467af1ef4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Global/Personajes/Kito/Kito06.max using Guid(fd9bb9b0859b6b14e83b4d9467af1ef4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1af61552bd64fb16a79ac06d76bc292') in 0.067516 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/Global/Personajes/Kito/Kito05.max
+  artifactKey: Guid(477674b7b295e344baafce61574362d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Global/Personajes/Kito/Kito05.max using Guid(477674b7b295e344baafce61574362d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b421d6815729fc928b38c2182a60427') in 0.061053 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000272 seconds.
+  path: Assets/Global/Personajes/Kito/kitobase.png
+  artifactKey: Guid(4504c108e3e98f74da48dc52d348b3fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Global/Personajes/Kito/kitobase.png using Guid(4504c108e3e98f74da48dc52d348b3fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f7b8aca3e814342fa26d88af66cd750') in 0.018181 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000305 seconds.
+  path: Assets/Global/Personajes/Kito/kito.FBX
+  artifactKey: Guid(be85c4cb22dbb7a4089990ee50bcf689) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Global/Personajes/Kito/kito.FBX using Guid(be85c4cb22dbb7a4089990ee50bcf689) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e24f371443f4f5afbfec2cf25107b2f3') in 0.081216 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000212 seconds.
+  path: Assets/Global/Personajes/Kito/Kito15.max
+  artifactKey: Guid(91e91a442efdc86418a05c200686edb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Global/Personajes/Kito/Kito15.max using Guid(91e91a442efdc86418a05c200686edb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d9c299c9b285ff61a0e5798ce6b3ac5') in 0.221121 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000278 seconds.
+  path: Assets/Global/Personajes/Kito/Kito04.max
+  artifactKey: Guid(07af3003dbca163459510b4f0b092e8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Global/Personajes/Kito/Kito04.max using Guid(07af3003dbca163459510b4f0b092e8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0d767a18dc5eeff24f20e862951b7f3') in 0.091048 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000389 seconds.
+  path: Assets/Global/Personajes/Kito/Kito08.max
+  artifactKey: Guid(56363deee65c8e841b15e6ad3e5eb60a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Global/Personajes/Kito/Kito08.max using Guid(56363deee65c8e841b15e6ad3e5eb60a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9741bba0899d645e46049f13d1dcc4c2') in 0.076218 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000262 seconds.
+  path: Assets/Global/Personajes/Kito/Kito19.max
+  artifactKey: Guid(87d0a6bb5477d234a86d17408ad86cac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Global/Personajes/Kito/Kito19.max using Guid(87d0a6bb5477d234a86d17408ad86cac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfa9d33eac7dd3be12241e9b5380f5b5') in 0.056813 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/Global/Personajes/Kito/Kito07.max
+  artifactKey: Guid(943d038c84945da4fab7037bfa6c7921) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Global/Personajes/Kito/Kito07.max using Guid(943d038c84945da4fab7037bfa6c7921) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9040ee67fbdcda0275cc7afa8a1099d6') in 0.054418 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000224 seconds.
+  path: Assets/Global/Personajes/Kito/Kito14.max
+  artifactKey: Guid(c3f36743b21704344bc474086244e678) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Global/Personajes/Kito/Kito14.max using Guid(c3f36743b21704344bc474086244e678) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc782cae9ca83c354de72700e6a042e0') in 0.055911 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000234 seconds.
+  path: Assets/Global/Personajes/Kito/Kito15.png
+  artifactKey: Guid(d203b55f03ef3a943b72127bd37d1be4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Global/Personajes/Kito/Kito15.png using Guid(d203b55f03ef3a943b72127bd37d1be4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2eabdc9d5a20c18743b7d99d82ad419') in 0.043390 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000418 seconds.
+  path: Assets/Global/Personajes/Kito/Kito02.max
+  artifactKey: Guid(9c4344d1cf28bb24fb720f725ab448b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Global/Personajes/Kito/Kito02.max using Guid(9c4344d1cf28bb24fb720f725ab448b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72cf20648ff8397eab61adccade257d5') in 0.034551 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/Global/Personajes/Kito/kito.png
+  artifactKey: Guid(5e2c31439e0cea14782cf4d2d967cc81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Global/Personajes/Kito/kito.png using Guid(5e2c31439e0cea14782cf4d2d967cc81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e056d4c4bff23ff0d09c5cd4c8636d97') in 0.029137 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000282 seconds.
+  path: Assets/Global/Personajes/Kito/Kito11.max
+  artifactKey: Guid(561de1ff6a74cca4c9ed7db8f6497368) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Global/Personajes/Kito/Kito11.max using Guid(561de1ff6a74cca4c9ed7db8f6497368) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5c8f149a1b7e642e279ebdf4e359376') in 0.060018 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000266 seconds.
+  path: Assets/Global/Personajes/Kito/Kito12.max
+  artifactKey: Guid(86e8e76eaad11e144bb25b6981a07b56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Global/Personajes/Kito/Kito12.max using Guid(86e8e76eaad11e144bb25b6981a07b56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91e3df1828590002bcd315c665f56599') in 0.088732 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000244 seconds.
+  path: Assets/Global/Personajes/Kito/Kito16.max
+  artifactKey: Guid(444b0acd909a1ff46adbfb234c49aae4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Global/Personajes/Kito/Kito16.max using Guid(444b0acd909a1ff46adbfb234c49aae4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4acf9ec30f600e88c789b14bd510cf0') in 0.079176 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000287 seconds.
+  path: Assets/Global/Personajes/Kito/KitoDiffuse.png
+  artifactKey: Guid(308e8016180eff84d8046c8de2fe34e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Global/Personajes/Kito/KitoDiffuse.png using Guid(308e8016180eff84d8046c8de2fe34e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47d5df41c04d3810fc091b4e1be093ec') in 0.060270 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000192 seconds.
+  path: Assets/Global/Personajes/Kito/Kito_diff.png
+  artifactKey: Guid(5e756017975022a41a406f374d73e486) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Global/Personajes/Kito/Kito_diff.png using Guid(5e756017975022a41a406f374d73e486) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fe16d50824a3122a1a55a2253a5d653') in 0.011559 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000206 seconds.
+  path: Assets/Global/Items/Patineta/KitoSkate.png
+  artifactKey: Guid(2dba5abff6cc4ed43b5769ddc00ba999) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Global/Items/Patineta/KitoSkate.png using Guid(2dba5abff6cc4ed43b5769ddc00ba999) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a03a9970501265273775460f3a9057d') in 0.008315 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000200 seconds.
+  path: Assets/Global/Personajes/Kito/Kito.mat
+  artifactKey: Guid(e869392090f1f56429b3c655f83c1183) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Global/Personajes/Kito/Kito.mat using Guid(e869392090f1f56429b3c655f83c1183) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '892d368dff7000739eb863f0ead289d2') in 0.015338 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000209 seconds.
+  path: Assets/Global/Personajes/Kito/Kito09.max
+  artifactKey: Guid(a968d6520f286ae4d9de890dbed21af2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Global/Personajes/Kito/Kito09.max using Guid(a968d6520f286ae4d9de890dbed21af2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6ba8cdb78158327f984da42f67bd728') in 0.045460 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000287 seconds.
+  path: Assets/Global/Personajes/Kito/Kito.max
+  artifactKey: Guid(1696b401d712d114fb72e0d783ff43ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Global/Personajes/Kito/Kito.max using Guid(1696b401d712d114fb72e0d783ff43ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '368bb0ac280e05fa2f5cc5cb8b47be3a') in 0.151882 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/Global/Personajes/Kito/Kito03.max
+  artifactKey: Guid(7cfbd9e6cd6b0f4408a2f187182e8a5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Global/Personajes/Kito/Kito03.max using Guid(7cfbd9e6cd6b0f4408a2f187182e8a5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35c6010a743c09366ece09862357770f') in 0.211228 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/Global/Personajes/Kito/Kito13.max
+  artifactKey: Guid(29af9527271b5ba43a3f78ccaec94f8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Global/Personajes/Kito/Kito13.max using Guid(29af9527271b5ba43a3f78ccaec94f8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9443a06346dd1ba6d342736dadad4806') in 0.045559 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/Global/Personajes/Kito/KitoDiffuse.psd
+  artifactKey: Guid(951d62082bc231b4db951d8c8d753e11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Global/Personajes/Kito/KitoDiffuse.psd using Guid(951d62082bc231b4db951d8c8d753e11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c15e2e5f8d21502104855c9fac16c878') in 0.008315 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000203 seconds.
+  path: Assets/Global/Personajes/Kito/Kito10.max
+  artifactKey: Guid(7e269cb2e724ac7429bf42f25fde1097) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Global/Personajes/Kito/Kito10.max using Guid(7e269cb2e724ac7429bf42f25fde1097) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30c61eb0c8e9efe867f7c86208408060') in 0.043856 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000228 seconds.
+  path: Assets/Global/Personajes/Kito/Kito18.max
+  artifactKey: Guid(0474bc01261c7ea40a1435d0ceff2f6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Global/Personajes/Kito/Kito18.max using Guid(0474bc01261c7ea40a1435d0ceff2f6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46db1322237b975baf773f3cc443a2e6') in 0.031366 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.178300 seconds.
+  path: Assets/Global/Animaciones/Kito.controller
+  artifactKey: Guid(c3685db32b636724e96ed868ea04d893) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Global/Animaciones/Kito.controller using Guid(c3685db32b636724e96ed868ea04d893) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd56d032b9497eca02ba86d3206373efe') in 0.006644 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.849291 seconds.
+  path: Assets/Global/Personajes/Kito
+  artifactKey: Guid(3d5c457e914104945a09af55c8cde48b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Global/Personajes/Kito using Guid(3d5c457e914104945a09af55c8cde48b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf60a8f1faab3051519097c48943ac0f') in 0.001277 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.875501 seconds.
+  path: Assets/kito.prefab
+  artifactKey: Guid(512ff0aea03ac8d43a7cc461b76db7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/kito.prefab using Guid(512ff0aea03ac8d43a7cc461b76db7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6668f991ae1abe1669fb4d088d6210d3') in 0.026339 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8115.264193 seconds.
+  path: Assets/TestScene.unity
+  artifactKey: Guid(0ee188d855d08574f9b46066dd944070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TestScene.unity using Guid(0ee188d855d08574f9b46066dd944070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f2cd7e102b5b6484bec37171ee6af3b') in 0.005477 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001670 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.34 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  7.327 seconds
+Domain Reload Profiling:
+	ReloadAssembly (7327ms)
+		BeginReloadAssembly (2813ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (31ms)
+		EndReloadAssembly (4473ms)
+			LoadAssemblies (5550ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (493ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (31ms)
+			SetupLoadedEditorAssemblies (923ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (2ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (60ms)
+				ProcessInitializeOnLoadAttributes (214ms)
+				ProcessInitializeOnLoadMethodAttributes (640ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.35 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2858 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 145.2 MB.
+System memory in use after: 145.4 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 3509.
+Total: 2.448800 ms (FindLiveObjects: 0.158400 ms CreateObjectMapping: 0.107300 ms MarkObjects: 2.159100 ms  DeleteObjects: 0.023100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

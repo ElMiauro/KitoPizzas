@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+	public bool canTakeDamage = true;
 	public enum Lane
 	{
 		left,
@@ -11,6 +12,16 @@ public class PlayerController : MonoBehaviour
 		center
 	}
 	public Lane lane = Lane.center;
+
+	public enum PlayerState
+	{
+		idle,
+		moving,
+		crouch,
+		jump,
+		knocked
+	}
+	public PlayerState state = PlayerState.idle;
 
 	public float jumpForce = 500f;
 	public bool isGrounded = true;
@@ -35,6 +46,9 @@ public class PlayerController : MonoBehaviour
 	// Player Art
 	public GameObject playerArt;
 	Animator animator;
+
+	// Managers
+	GameController controller;
 	
 
 	private void Start()
@@ -44,6 +58,7 @@ public class PlayerController : MonoBehaviour
 		targetPosition = transform.localPosition;
 		boxCollider = GetComponent<BoxCollider>();
 		animator = playerArt.GetComponentInChildren<Animator>();
+		controller = GameController.control;
 	}
 
 
@@ -51,6 +66,7 @@ public class PlayerController : MonoBehaviour
 	void Update()
 	{
 		if (isMoving || !isGrounded) return;
+		if (state == PlayerState.knocked) return;
 
 		if (Input.GetKeyDown(KeyCode.Keypad4))
 		{
@@ -76,14 +92,23 @@ public class PlayerController : MonoBehaviour
 		{
 			Crouch();
 		}
+
+		if (Input.GetKeyDown(KeyCode.M))
+		{
+			playerArt.GetComponentInChildren<CharacterFlash>().StartFlashing(5);
+		}
 	}
+
+
 
 	private void Jump()
 	{
+		if (isMoving) return;
 		if (isCrouching)
 		{
 			Crouch();
 		}
+		state = PlayerState.jump;
 		rb.AddForce(Vector3.up * jumpForce);
 	}
 
@@ -91,22 +116,20 @@ public class PlayerController : MonoBehaviour
 	{
 		if (!isCrouching)
 		{
+			state = PlayerState.crouch;
 			animator.SetBool("crouching", true);
 			// Crouch down
 			float newSize = boxCollider.size.y / 2;
 			boxCollider.size = new Vector3(boxCollider.size.x, newSize, boxCollider.size.z);
 			boxCollider.center = Vector3.zero;
-			//transform.localScale = new Vector3(1, crouchHeight / normalHeight, 1);
 			isCrouching = true;
-			//transform.position -= new Vector3(0, .3f, 0);
 		}
 		else
 		{
+			state = PlayerState.moving;
 			animator.SetBool("crouching", false);
 			// Stand up
-			//transform.localScale = new Vector3(1, 1, 1);
 			isCrouching = false;
-			//transform.position += new Vector3(0, .3f, 0);
 			float newSize = boxCollider.size.y * 2;
 			boxCollider.size = new Vector3(boxCollider.size.x, newSize, boxCollider.size.z);
 			boxCollider.center = new Vector3(0,.4f,0);
@@ -173,8 +196,20 @@ public class PlayerController : MonoBehaviour
 
 	private void OnTriggerEnter(Collider other)
 	{
+		if (other.CompareTag("Topping"))
+		{
+			Topping topping = other.GetComponent<Topping>();
+			controller.GetTopping(topping.type, topping.score);
+			topping.Unload();
+			return;
+		}
+		if (!canTakeDamage) return;
 		if (!other.CompareTag("Obstacle")) return;
+		if (state == PlayerState.knocked) return;
+		state = PlayerState.knocked;
+		animator.SetTrigger("Knocked");
 		GetComponentInParent<PathCreation.Examples.PathFollower>().enabled = false;
+		controller.GetHit();
 	}
 
 }
