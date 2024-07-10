@@ -66,6 +66,7 @@ public class PlayerController : MonoBehaviour
 	void Update()
 	{
 		if (isMoving || !isGrounded) return;
+		if (state == PlayerState.jump) return;
 		if (state == PlayerState.knocked) return;
 
 		if (Input.GetKeyDown(KeyCode.Keypad4))
@@ -108,7 +109,7 @@ public class PlayerController : MonoBehaviour
 		{
 			Crouch();
 		}
-		state = PlayerState.jump;
+		//state = PlayerState.jump;
 		rb.AddForce(Vector3.up * jumpForce);
 	}
 
@@ -139,7 +140,9 @@ public class PlayerController : MonoBehaviour
 	// Ground check
 	private void FixedUpdate()
 	{
-		isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
+				isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
+				
+
 	}
 
 	IEnumerator MoveTo(Lane targetLane)

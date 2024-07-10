@@ -9,7 +9,7 @@ namespace PathCreation.Examples
         public PathCreator pathCreator;
         public EndOfPathInstruction endOfPathInstruction;
         public float speed = 5;
-        float distanceTravelled;
+        public float distanceTraveled;
 
         void Start() {
             if (pathCreator != null)
@@ -23,16 +23,16 @@ namespace PathCreation.Examples
         {
             if (pathCreator != null)
             {
-                distanceTravelled += speed * Time.deltaTime;
-                transform.position = pathCreator.path.GetPointAtDistance(distanceTravelled, endOfPathInstruction);
-                transform.rotation = pathCreator.path.GetRotationAtDistance(distanceTravelled, endOfPathInstruction);
+                distanceTraveled += speed * Time.deltaTime;
+                transform.position = pathCreator.path.GetPointAtDistance(distanceTraveled, endOfPathInstruction);
+                transform.rotation = pathCreator.path.GetRotationAtDistance(distanceTraveled, endOfPathInstruction);
             }
         }
 
-        // If the path changes during the game, update the distance travelled so that the follower's position on the new path
+        // If the path changes during the game, update the distance traveled so that the follower's position on the new path
         // is as close as possible to its position on the old path
         void OnPathChanged() {
-            distanceTravelled = pathCreator.path.GetClosestDistanceAlongPath(transform.position);
+            distanceTraveled = pathCreator.path.GetClosestDistanceAlongPath(transform.position);
         }
     }
 }
