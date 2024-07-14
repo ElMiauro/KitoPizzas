@@ -25,8 +25,9 @@ public class PathFill : MonoBehaviour
     {
         float d = follower.distanceTraveled;
         
-		for (int i = 0; i < 5; i++)
+		for (int i = 0; i < 50; i++)
 		{
+            int lane = 1;
             Vector3 basePos = path.path.GetPointAtDistance(d + i * displacement);
             Quaternion baseRot = path.path.GetRotationAtDistance(d + i * displacement);
             Instantiate(cube, basePos, baseRot);
