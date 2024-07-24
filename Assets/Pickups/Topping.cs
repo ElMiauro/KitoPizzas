@@ -9,7 +9,7 @@ public enum ToppingType
     pepperoni,
     tomato,
 }
-public class Topping : MonoBehaviour
+public class Topping : SpawneableObject
 {
     public ToppingType type;
     public int score = 1;
