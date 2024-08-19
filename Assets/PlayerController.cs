@@ -65,7 +65,7 @@ public class PlayerController : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
-		if (isMoving || !isGrounded) return;
+		if (isMoving) return;
 		if (state == PlayerState.jump) return;
 		if (state == PlayerState.knocked) return;
 
