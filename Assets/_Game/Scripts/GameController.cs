@@ -54,6 +54,12 @@ public class GameController : MonoBehaviour
         int currValue = toppings[toppingType];
         toppings[toppingType] = currValue + 1;
         score += _score;
+
+        if (toppingType == ToppingType.pizza)
+        {
+            lives++;
+        }
+
         ui.DrawUI();
     }
 }

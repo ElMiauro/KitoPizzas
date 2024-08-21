@@ -51,29 +51,10 @@ namespace KitoPizza.Spawner
                         continue;
                     }
 
-                    // Random between 0 and 2. 0 is left, 1 is middle, 2 is right
-
-                    var laneIsValid = false;
-
-                    int laneIndex = 0;
-                    while (!laneIsValid)
-                    {
-                        laneIndex = Random.Range(0, 3);
-
-                        if (laneIndex == 0 && leftLaneAvailable)
-                        {
-                            laneIsValid = true;
-                        }
-                        else if (laneIndex == 1 && middleLaneAvailable)
-                        {
-                            laneIsValid = true;
-                        }
-                        else if (laneIndex == 2 && rightLaneAvailable)
-                        {
-                            laneIsValid = true;
-                        }
-                    }
-
+                    Obstacle obstacle = data.prefab.GetComponent<Obstacle>();
+                    // Define lane index
+                    bool[] globalLanes = { leftLaneAvailable, middleLaneAvailable, rightLaneAvailable };
+                    int laneIndex = GetLaneIndex(obstacle ? obstacle.GetValidLanes() : globalLanes);
 
                     // Spawn the object using the lane index and displacement. 
                     // If index = 0 then transform.position.x = -laneDisplacement.x
@@ -104,22 +85,48 @@ namespace KitoPizza.Spawner
             }
         }
 
+        private int GetLaneIndex(bool[] lanes)
+        {
+            // Random between 0 and 2. 0 is left, 1 is middle, 2 is right
+            bool laneIsValid = false;
+
+            int laneIndex = 0;
+            while (!laneIsValid)
+            {
+                laneIndex = Random.Range(0, 3);
+
+                if (laneIndex == 0 && lanes[0])
+                {
+                    laneIsValid = true;
+                }
+                else if (laneIndex == 1 && lanes[1])
+                {
+                    laneIsValid = true;
+                }
+                else if (laneIndex == 2 && lanes[2])
+                {
+                    laneIsValid = true;
+                }
+            }
+            return laneIndex;
+        }
+
 
         private void OnDrawGizmosSelected()
         {
             // Set the matrix to object's transform (position, rotation and scale)
             Gizmos.matrix = Matrix4x4.TRS(transform.position, transform.rotation, transform.localScale);
 
-// Draw a red cube at object's position
+           // Draw a red cube at object's position
 
             Gizmos.color = middleLaneAvailable ? Color.red : Color.grey;
             Gizmos.DrawCube(Vector3.zero, new Vector3(1, 1, 1));
 
-// Draw a green cube at object's position moved forward
+            // Draw a green cube at object's position moved forward
             Gizmos.color = rightLaneAvailable ? Color.green : Color.grey;
             Gizmos.DrawCube(new Vector3(0, 0, laneDisplacement.z), new Vector3(1, 1, 1));
 
-// Draw a blue cube at object's position moved backward
+            // Draw a blue cube at object's position moved backward
             Gizmos.color = leftLaneAvailable ? Color.blue : Color.grey;
             Gizmos.DrawCube(new Vector3(0, 0, -laneDisplacement.z), new Vector3(1, 1, 1));
         }

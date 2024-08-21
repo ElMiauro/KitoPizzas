@@ -8,6 +8,7 @@ public enum ToppingType
     olive,
     pepperoni,
     tomato,
+    pizza
 }
 public class Topping : SpawneableObject
 {

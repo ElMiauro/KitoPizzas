@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class Obstacle : SpawneableObject
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+	public bool[] GetValidLanes()
+	{
+		bool[] all = { true, true, true };
+		bool[] sides = { true, false, true };
+		bool[] center = { false, true, false };
+		switch (placement)
+		{
+			case ItemPlacement.center:
+				return center;
+			case ItemPlacement.side:
+				return sides;
+			default:
+				return all;
+		}
+	}
 }
