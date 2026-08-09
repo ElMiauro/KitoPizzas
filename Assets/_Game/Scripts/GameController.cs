@@ -62,4 +62,12 @@ public class GameController : MonoBehaviour
 
         ui.DrawUI();
     }
+
+	private void Update()
+	{
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
+	}
 }

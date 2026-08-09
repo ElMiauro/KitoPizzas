@@ -28,7 +28,7 @@ public class PlayerController : MonoBehaviour
 
     public float jumpForce = 500f;
     public bool isGrounded = true;
-    public Transform groundCheck;
+    //public Transform groundCheck;
     public LayerMask groundMask;
     public float groundDistance = 0.4f;
 
@@ -143,7 +143,7 @@ public class PlayerController : MonoBehaviour
     // Ground check
     private void FixedUpdate()
     {
-        isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
+       // isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
     }
 
     IEnumerator MoveTo(Lane targetLane)

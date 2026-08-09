@@ -35,11 +35,11 @@ public class PlayerTunnel : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Keypad6) && state != State.goingUp)
         {
-            StartGoingUp(-maxSideRotation);
+            StartGoingUp(maxSideRotation);
         }
         else if (Input.GetKeyDown(KeyCode.Keypad4) && state != State.goingUp)
         {
-            StartGoingUp(maxSideRotation);
+            StartGoingUp(-maxSideRotation);
         }
     }
 
@@ -101,12 +101,5 @@ public class PlayerTunnel : MonoBehaviour
             pivot.transform.rotation = targetRotation;
             state = nextState;
         }
-    }
-
-    private float NormalizeAngle(float angle)
-    {
-        angle = angle % 360;
-        if (angle < 0) angle += 360;
-        return angle;
     }
 }
